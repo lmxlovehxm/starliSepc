@@ -6,21 +6,16 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |spec|
-  spec.name         = "starliSepc"
-  spec.version      = "0.0.1"
-  spec.summary      = "基础组件库"
-  spec.description  = <<-DESC
-功能描述：个人基础组件
-                   DESC
-
-  spec.homepage     = "https://github.com/lmxlovehxm/starliSepc.git"
-  spec.license      = "MIT"
-  spec.author             = { "wsl" => "565818669@.com" }
-  spec.platform     = :ios, "8.0"
-  spec.source       = { :git => "https://github.com/lmxlovehxm/starliSepc.git", :tag => "v#{spec.version}"}
-
-  spec.source_files  = "sources/dumpFileFinal.pcap"
-  spec.resource = "sources/"
-  spec.requires_arc = true
+Pod::Spec.new do |s|
+s.name         = "starliSepc"
+s.version      = "0.0.1"
+s.summary      = "A custom component for the ecomfe's echarts."
+s.homepage     = "https://github.com/lmxlovehxm/starliSepc.git"
+s.license      = { :type => "MIT", :file => 'LICENSE.md' }
+s.author       = { "lmxlovehxm" => "565818669@qq.com" }
+s.platform     = :ios, "8.0"
+s.source       = { :git => "https://github.com/lmxlovehxm/starliSepc.git", :tag => s.version}
+s.frameworks   = 'UIKit'
+s.resource     = "starliSepc/sources/"
+s.requires_arc = true
 end
